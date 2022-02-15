@@ -3,7 +3,7 @@ Original HealthBarHud made by a horse
 keep in mind this will effectively remove the match hud
 
 
-if u here bc the fortnite hud ignore this because this probably only works in 1280x1024
+if u here bc the fortnite hud ignore this because this (and the aspect ratio folder) probably only works in 1280x1024
 Instructions:
 	1. Place this folder in your game's custom folder
 	2. Make sure you don't have any other hud files, they could conflict
