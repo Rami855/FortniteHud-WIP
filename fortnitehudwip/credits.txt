@@ -1,0 +1,8 @@
+Healthbar hud, hud used as base
+https://gamebanana.com/mods/352711
+
+Fortnite damage numbers:
+https://gamebanana.com/mods/348960
+
+TF2 Icons font
+https://github.com/Hypnootize/TF2-HUD-Icons

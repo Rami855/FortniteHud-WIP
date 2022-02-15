@@ -1,0 +1,35 @@
+//Health Bonus Pulse
+
+event HudHealthBonusPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"		Linear 0.2 0.4
+
+
+	Animate PlayerStatusHealthValue	ypos		"54"		Linear 0.0 0.0
+	Animate PlayerStatusHealthValueSH	ypos		"56"		Linear 0.0 0.0
+
+	Animate PlayerStatusHealthValueID	fgcolor		"1 122 208 255"		Linear 0.0 0.0
+
+	RunEvent HudHealthBonusPulseLoop	0.4
+}
+
+// call to loop HudHealthBonusPulse
+event HudHealthBonusPulseLoop
+{
+
+	Animate PlayerStatusHealthValue		ypos		"54"		Linear 0.0 0.0
+	RunEvent HudHealthBonusPulse 0.0
+}
+
+event HudHealthBonusPulseStop
+{
+	StopEvent HudHealthBonusPulse 0.0
+	StopEvent HudHealthBonusPulseLoop 0.0
+
+	Animate PlayerStatusHealthValue		ypos		"77"		Linear 0.0 0.0
+	Animate PlayerStatusHealthValueSH	ypos		"79"		Linear 0.0 0.0
+
+	Animate PlayerStatusHealthValueID	fgcolor		"TanLight"		Linear 0.0 0.0
+
+}
